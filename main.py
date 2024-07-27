@@ -81,7 +81,7 @@ def post_creation_page():
                     st.write(f"### {platform} Posts")
                     if platform in posts:
                         for i, post in enumerate(posts[platform]):
-                            st.container(f"**Post {i+1}**: {post}")
+                            st.html(f"**Post {i+1}**: {post}")
         else:
             st.error("Please select at least one platform.")
 
