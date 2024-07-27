@@ -71,16 +71,19 @@ def post_creation_page():
     st.markdown('</div>', unsafe_allow_html=True)
 
     if idea_input:
-        posts = generate_posts(idea_input, platforms, num_posts, tags_option, language)
-        tabs = st.tabs(platforms)
+        if platforms:
+            posts = generate_posts(idea_input, platforms, num_posts, tags_option, language)
+            tabs = st.tabs(platforms)
 
-        # Display posts for each platform
-        for tab, platform in zip(tabs, platforms):
-            with tab:
-                st.write(f"### {platform} Posts")
-                if platform in posts:
-                    for i, post in enumerate(posts[platform]):
-                        st.text_area(f"**Post {i+1}**: {post}")
+            # Display posts for each platform
+            for tab, platform in zip(tabs, platforms):
+                with tab:
+                    st.write(f"### {platform} Posts")
+                    if platform in posts:
+                        for i, post in enumerate(posts[platform]):
+                            st.text_area(f"**Post {i+1}**: {post}")
+        else:
+            st.error("Please select at least one platform.")
 
 # Function to display the sentiment analysis page
 def sentiment_analysis_page():
