@@ -10,7 +10,7 @@ This is the Headstarter AI 1st Hackathon Project. SleekSocial is an AI-powered t
 - **Post Summary**
 - **Post Explainer**
 
-- 
+  
 # Technologies
 - **Llama API Key**
 - **Hugging Face Pipelines**
