@@ -1,7 +1,17 @@
 ### [SleekSocial](https://sleeksocial.streamlit.app/)
 This is the Headstarter AI 1st Hackathon Project. SleekSocial is an AI-powered tool that allows content creators to generate multiple posts for multiple platforms in Multiple Languages. It also allows them to know the intent of other's posts through sentiment analysis capabilities. It provides the features to provide explanations and a summary of posts.
 
-# How to Setup
+# Features
+- **Social Media post generation for different platforms using single idea.**
+- **Multiple Post Generations**
+- **Tags for Posts**
+- **Multilingual**
+- **Sentiment Analysis**
+- **Post Summary**
+- **Post Explainer**
+
+- 
+# Technologies
 - **Llama API Key**
 - **Hugging Face Pipelines**
 - **Streamlit**
