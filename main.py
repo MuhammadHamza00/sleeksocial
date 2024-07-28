@@ -27,7 +27,7 @@ def generate_posts(idea, platforms, num_posts, tags_option, language):
         f"Idea: {idea}\n"
         f"Language: {language}\n"
         f"Tags: {tags_option}\n"
-        f"Each post should be 300 words long.\n"
+        f"Each post should be short.\n"
     )
     
     for platform in platforms:
@@ -181,6 +181,7 @@ def post_analyzer_page():
 
 # Sidebar
 st.sidebar.title("Navigation")
+st.sidebar.info("We've Token Limit, You may get chunked response!")
 nav_option = st.sidebar.selectbox("Select a Page", ["Post Creation", "Sentiment Analysis", "Post Analyzer"])
 
 st.sidebar.title("Platforms Selection")
